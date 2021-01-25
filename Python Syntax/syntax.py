@@ -56,22 +56,36 @@ def say_hello(who):
     print("Hello!", who)
 
 say_hello('Nico')
-"""
 
 # Practice function
-
 
 def plus(a, b):
     return a + b
 
-
 def minus(a, b=0):
     return a - b
-
 
 def multiply(a, b):
     return a * b
 
-
 print(plus(2, 3))
 print(minus(2))
+
+# function keyworded Arguments
+
+def plus(a, b):
+    return a + b
+
+result = plus(b=30, a=1)
+
+print(result)
+
+# format
+
+def say_hello(name, age):
+    return f"Hello {name} you are {age} years old"
+
+
+hello = say_hello("nico", "12")
+print(hello)
+"""
