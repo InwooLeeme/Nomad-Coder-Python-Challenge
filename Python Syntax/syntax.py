@@ -23,7 +23,7 @@ print(a, b)
 # None
 a_none = None
 print(a_none)
-"""
+
 
 # List
 # 변경 가능
@@ -47,3 +47,4 @@ nico = {
 print(nico)
 nico["handsome"] = True
 print(nico)
+ """
