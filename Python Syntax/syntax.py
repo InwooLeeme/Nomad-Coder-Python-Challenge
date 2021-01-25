@@ -47,4 +47,14 @@ nico = {
 print(nico)
 nico["handsome"] = True
 print(nico)
- """
+"""
+# function
+
+# How to define function
+
+
+def say_hello():
+    print("Hello!")
+
+
+say_hello()
