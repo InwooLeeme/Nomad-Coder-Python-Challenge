@@ -9,7 +9,7 @@ Nomad Coder Python 2 weeks Challenge.
 ## Tasks
 
 - [x] Day 1 Quiz.
-- [ ] Day 2 Code Challenge
+- [x] Day 2 Code Challenge
 
 ### Day 2 Challenge Goals
 
