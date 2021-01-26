@@ -122,7 +122,7 @@ print(multiply("10", 2))
 print(divide("10", 2))
 print(remind("10", 2))
 print(power("10", 2))
-"""
+
 
 # if else and or
 # age check
@@ -141,3 +141,19 @@ def age_check(age):
 
 
 age_check(18)
+
+# for loop
+
+import ceil from math
+days = ("Mon", "Tue", "Wed", "Thu", "Fri")
+
+for i in days:
+    if i is "Wed":
+        break
+    else:
+        print(i)
+ """
+# how to import module
+from math import ceil, fsum
+print(ceil(13.2))
+print(fsum([1, 2, 3, 4]))
