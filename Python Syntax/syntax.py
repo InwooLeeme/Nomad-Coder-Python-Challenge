@@ -123,3 +123,21 @@ print(divide("10", 2))
 print(remind("10", 2))
 print(power("10", 2))
 """
+
+# if else and or
+# age check
+
+
+def age_check(age):
+    print(f"you are {age}")
+    if age < 18:
+        print("you can drink")
+    elif age == 18 or age == 19:
+        print("you are new to this!")
+    elif age > 20 and age < 25:
+        print("you are still kind of young")
+    else:
+        print("enjoy your drink")
+
+
+age_check(18)
