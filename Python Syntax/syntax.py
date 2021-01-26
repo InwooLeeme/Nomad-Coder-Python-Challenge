@@ -88,7 +88,6 @@ def say_hello(name, age):
 
 hello = say_hello("nico", "12")
 print(hello)
-"""
 
 # Calculator
 
@@ -123,3 +122,4 @@ print(multiply("10", 2))
 print(divide("10", 2))
 print(remind("10", 2))
 print(power("10", 2))
+"""
