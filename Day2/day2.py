@@ -16,6 +16,16 @@ def is_on_list(array, day):
 def get_x(array, index):
     return array[index]
 
+
+def add_x(array, day):
+    array.append(day)
+    return array
+
+
+def remove_x(array, day):
+    array.remove(day)
+    return array
+
 # \/\/\/\/\/\/\  DO NOT TOUCH AREA  \/\/\/\/\/\/\ #
 
 
