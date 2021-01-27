@@ -41,8 +41,21 @@ def get_from_dict(obj, key=None, value=None):
             print(f"{k}:{v}")
 
 
-def update_word():
+def update_word(obj, key=None, value=None):
     pass
+    if(obj is not my_english_dict):
+        print(f"You need to send a dictionary. You sent:{type(obj)}")
+    elif (key in obj and value is None):
+        print("You need to send a word and a definition to update.")
+    elif(key not in obj):
+        print(f"{key} is not on dict. Can't update non-existing word.")
+    elif(key in obj and value not in obj):
+        result = {key: value}
+        obj.update(result)
+        print(f"{key} has been updated to:{value}")
+    elif(key in obj):
+        for k, v in obj.items():
+            print(f"{k}:{v}")
 
 
 def delete_from_dict():
@@ -92,7 +105,7 @@ get_from_dict(my_english_dict, "galbi")
 # Should work and print the definiton of 'kimchi'
 print('\nget_from_dict(my_english_dict, "kimchi"):')
 get_from_dict(my_english_dict, "kimchi")
-""" 
+
 print("\n\n###### update_word ######\n")
 
 # Should not work. First argument should be a dict.
@@ -115,7 +128,7 @@ update_word(my_english_dict, "kimchi", "Food from the gods.")
 print('\nget_from_dict(my_english_dict, "kimchi"):')
 get_from_dict(my_english_dict, "kimchi")
 
-
+""" 
 print("\n\n###### delete_from_dict ######\n")
 
 # Should not work. First argument should be a dict.
