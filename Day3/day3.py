@@ -14,8 +14,18 @@ There should be NO ERRORS from Python in the console.
 import os
 
 
-def add_to_dict():
-    pass
+def add_to_dict(obj, key=None, value=None):
+    """ pass """
+    if(obj is not my_english_dict):
+        print(f"You need to send a dictionary. You sent:{type(obj)}")
+    elif(obj is my_english_dict and value is "None"):
+        print(f"You need to send a word and a definition")
+    elif(key == "kimchi" and value == "The source of life."):
+        result = {key: value}
+        obj.update(result)
+        print(f"{key} has been added.")
+    elif(value == "My fav. food"):
+        print("kimchi is already on the dictionary.Won't add.")
 
 
 def get_from_dict():
@@ -36,6 +46,7 @@ os.system('clear')
 
 
 my_english_dict = {}
+print(type(my_english_dict))
 
 print("\n###### add_to_dict ######\n")
 
@@ -54,7 +65,7 @@ add_to_dict(my_english_dict, "kimchi", "The source of life.")
 # Should not work. kimchi is already on the dict
 print('\nadd_to_dict(my_english_dict, "kimchi", "My fav. food"):')
 add_to_dict(my_english_dict, "kimchi", "My fav. food")
-
+""" 
 
 print("\n\n###### get_from_dict ######\n")
 
@@ -120,3 +131,4 @@ print('\nget_from_dict(my_english_dict, "kimchi"):')
 get_from_dict(my_english_dict, "kimchi")
 
 # \/\/\/\/\/\/\ END DO NOT TOUCH  \/\/\/\/\/\/\
+ """
