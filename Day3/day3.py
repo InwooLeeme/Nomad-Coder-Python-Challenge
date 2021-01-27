@@ -15,11 +15,11 @@ import os
 
 
 def add_to_dict(obj, key=None, value=None):
-    """ pass """
-    if(obj is not my_english_dict):
+    pass
+    if(type(obj) is not dict):
         print(f"You need to send a dictionary. You sent:{type(obj)}")
-    elif(obj is my_english_dict and value is "None"):
-        print(f"You need to send a word and a definition")
+    elif(obj is my_english_dict and value is None):
+        print("You need to send a word and a definition")
     elif(key == "kimchi" and value == "The source of life."):
         result = {key: value}
         obj.update(result)
@@ -30,7 +30,7 @@ def add_to_dict(obj, key=None, value=None):
 
 def get_from_dict(obj, key=None, value=None):
     pass
-    if(obj is not my_english_dict):
+    if(type(obj) is not dict):
         print(f"You need to send a dictionary. You sent:{type(obj)}")
     elif(key is None and value is None):
         print("You need to send a word to search for.")
@@ -43,7 +43,7 @@ def get_from_dict(obj, key=None, value=None):
 
 def update_word(obj, key=None, value=None):
     pass
-    if(obj is not my_english_dict):
+    if(type(obj) is not dict):
         print(f"You need to send a dictionary. You sent:{type(obj)}")
     elif (key in obj and value is None):
         print("You need to send a word and a definition to update.")
@@ -58,8 +58,19 @@ def update_word(obj, key=None, value=None):
             print(f"{k}:{v}")
 
 
-def delete_from_dict():
+def delete_from_dict(obj, key=None, value=None):
     pass
+    if(type(obj) is not dict):
+        print(f"You need to send a dictionary. You sent:{type(obj)}")
+    elif (key is None and value is None):
+        print("You need to specify a word to delete.")
+    elif(key not in obj and value is None):
+        print(f"{key} is not in this dict. Won't delete")
+    elif(key in obj):
+        obj.pop(key)
+        print(f"{key} has been deleted.")
+    elif (key not in obj):
+        print(f"{key} was not found in this dict.")
 
 # \/\/\/\/\/\/\ DO NOT TOUCH  \/\/\/\/\/\/\
 
@@ -128,7 +139,7 @@ update_word(my_english_dict, "kimchi", "Food from the gods.")
 print('\nget_from_dict(my_english_dict, "kimchi"):')
 get_from_dict(my_english_dict, "kimchi")
 
-""" 
+
 print("\n\n###### delete_from_dict ######\n")
 
 # Should not work. First argument should be a dict.
@@ -152,4 +163,3 @@ print('\nget_from_dict(my_english_dict, "kimchi"):')
 get_from_dict(my_english_dict, "kimchi")
 
 # \/\/\/\/\/\/\ END DO NOT TOUCH  \/\/\/\/\/\/\
- """
