@@ -28,8 +28,17 @@ def add_to_dict(obj, key=None, value=None):
         print("kimchi is already on the dictionary.Won't add.")
 
 
-def get_from_dict():
+def get_from_dict(obj, key=None, value=None):
     pass
+    if(obj is not my_english_dict):
+        print(f"You need to send a dictionary. You sent:{type(obj)}")
+    elif(key is None and value is None):
+        print("You need to send a word to search for.")
+    elif(key not in obj and value is None):
+        print(f"{key} was not found in this dict.")
+    elif(obj is my_english_dict and key in obj):
+        for k, v in obj.items():
+            print(f"{k}:{v}")
 
 
 def update_word():
@@ -65,7 +74,6 @@ add_to_dict(my_english_dict, "kimchi", "The source of life.")
 # Should not work. kimchi is already on the dict
 print('\nadd_to_dict(my_english_dict, "kimchi", "My fav. food"):')
 add_to_dict(my_english_dict, "kimchi", "My fav. food")
-""" 
 
 print("\n\n###### get_from_dict ######\n")
 
@@ -84,7 +92,7 @@ get_from_dict(my_english_dict, "galbi")
 # Should work and print the definiton of 'kimchi'
 print('\nget_from_dict(my_english_dict, "kimchi"):')
 get_from_dict(my_english_dict, "kimchi")
-
+""" 
 print("\n\n###### update_word ######\n")
 
 # Should not work. First argument should be a dict.
