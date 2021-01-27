@@ -152,8 +152,9 @@ for i in days:
         break
     else:
         print(i)
- """
+
 # how to import module
 from math import ceil, fsum
 print(ceil(13.2))
 print(fsum([1, 2, 3, 4]))
+"""
