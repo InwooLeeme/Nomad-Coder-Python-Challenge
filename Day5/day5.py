@@ -11,5 +11,9 @@ country_list = BeautifulSoup(
 code_list = BeautifulSoup(
     request.text, "html.parser").select("td:nth-child(3)")
 
+country_name = []
+code_name = []
 
-ask_request()
+for name in country_list:
+    country_name.append(name.text)
+country_list = country_name
