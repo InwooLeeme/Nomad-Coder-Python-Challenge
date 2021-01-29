@@ -11,11 +11,14 @@ Nomad Coder Python 2 weeks Challenge.
 - [x] Day 1 Quiz.
 - [x] Day 2 Code Challenge.
 - [x] Day 3 Code Challenge.
+- [x] Day 4 Code Challenge.
+- [ ] Day 5 Code Challenge.
 
 ### Day 2 Challenge Goals
 
 - This Blueprint code is broken. There are some functions missing, you need to create them. When you run the code, the output must look like this
-  <img src="https://nomad-coders-assets.s3.amazonaws.com/media/public/django-summernote/2020-04-13/b23ef8d3-eab8-412d-bd66-ea6062ce2b6f.png">
+
+<img src="https://nomad-coders-assets.s3.amazonaws.com/media/public/django-summernote/2020-04-13/b23ef8d3-eab8-412d-bd66-ea6062ce2b6f.png">
 
 ### Day 2 Challenge Conditions
 
@@ -31,7 +34,8 @@ Nomad Coder Python 2 weeks Challenge.
 ### Day 3 Challenge Goals
 
 - Today's Blueprint code is broken. The functions are incomplete. When you run the code, the output must look like this
-  <img src="https://nomad-coders-assets.s3.amazonaws.com/media/public/django-summernote/2020-04-14/3f3c2ef1-5eaa-4a94-b913-f10a9c862224.png">
+
+<img src="https://nomad-coders-assets.s3.amazonaws.com/media/public/django-summernote/2020-04-14/3f3c2ef1-5eaa-4a94-b913-f10a9c862224.png">
 
 ### Day 3 Challenge Conditions
 
@@ -46,3 +50,19 @@ You need to complete the following functions:
 - 반드시 위 표기된 함수들 (add_to_dict. get_from_dict. update_word.delete_from_dict) 생성해야합니다.
 - DO NOT TOUCH 영역은 건들지마세요!
 - 힌트: Dict documentation
+
+### Day 5 Challenge goals
+
+- Using the boilerplate, make a program that gets a list of countries from a website with their currency codes, then let the user choose a country and display the currency code of that country.
+- This is part one of a bigger "country scrapping" project we will complete in the following days.
+
+### Day 5 Challenge Conditions
+
+- This is how the program should work:[https://imgur.com/Nh7nkjF]
+- The website you should get the countries and currencies from is:[https://www.iban.com/currency-codes]
+- Save the name of the country and the "Alpha-3 code" in an array.
+- Some countries don't have currency (No universal currency), don't add them to the list.
+- Check the user input, only numbers from inside the country list are allowed.
+- When a country is selected, show the name and currency code.
+- 힌트1: Use try/except when converting strings to numbers. ( int(input()) )
+- 힌트2: [https://stackoverflow.com/questions/522563/accessing-the-index-in-for-loops]
