@@ -9,4 +9,12 @@ html = BeautifulSoup(request.text, "html.parser")
 
 table = html.find("table")
 
-print(table)
+rows = table.find_all("tr")[1:]
+
+for row in rows:
+    td = row.find_all("td")
+    country = td[0].text
+    currency = td[1].text
+    code = td[2].text
+    print(code)
+# print(rows)
