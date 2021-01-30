@@ -1,4 +1,4 @@
-#import os
+# import os
 import requests
 from bs4 import BeautifulSoup
 from babel.numbers import format_currency
@@ -41,11 +41,28 @@ def convert_coins(first, second):
         convert_coin = int(input(
             f"How many {countries[first]['name']} do you want to convert to {countries[second]['name']}?\n"))
         convert_url = f"https://transferwise.com/gb/currency-converter/{countries[first]['code'].lower()}-to-{countries[second]['code'].lower()}-rate?amount={convert_coin}"
-        print(convert_url)
+
+        convert_request = requests.get(convert_url)
+
+        convert_soup = BeautifulSoup(convert_request.text, "html.parser")
+
+        convert_element = convert_soup.find(
+            "span", {"class": "text-success"})
+        exchange_rate = float(convert_element.text) * convert_coin
+
+        first_convert = format_currency(
+            convert_coin, f"{countries[first]['code']}", locale="ko_KR")
+        second_convert = format_currency(
+            exchange_rate, f"{countries[second]['code']}", locale="ko_KR")
+
+        print(f"{first_convert} is {second_convert}")
 
     except ValueError:
         print("That was not the number.")
         convert_coins(first, second)
+    except AttributeError:
+        print("Not found exchange_rate.\nTry another")
+        convert_coin(first, second)
 
 
 def ask_country():
@@ -77,4 +94,4 @@ Use the 'format_currency' function to format the output of the conversion
 format_currency(AMOUNT, CURRENCY_CODE, locale="ko_KR" (no need to change this one))
 """
 
-#print(format_currency(5000, "KRW", locale="ko_KR"))
+# print(format_currency(5000, "KRW", locale="ko_KR"))
