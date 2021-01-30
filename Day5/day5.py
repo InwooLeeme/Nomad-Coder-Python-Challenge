@@ -11,10 +11,18 @@ table = html.find("table")
 
 rows = table.find_all("tr")[1:]
 
+countries = []
+
 for row in rows:
     td = row.find_all("td")
     country = td[0].text
     currency = td[1].text
     code = td[2].text
-    print(code)
-# print(rows)
+    if(country and code):
+        if(currency != "No universal currency"):
+            country = {
+                "name": country,
+                "code": code
+            }
+            countries.append(country)
+print(countries)
