@@ -33,6 +33,23 @@ for row in rows:
 for index, key in enumerate(countries):
     print(f"#{index} : {key['name']}")
 
+print("Welcome to CurrencyConvert PRO 2000")
+
+
+def ask_country():
+    try:
+        print("Where are you from? Choose a country by number.\n")
+        first_country = int(input("#: "))
+        print(f"{countries[first_country]['name']}\n")
+        print("Now choose another country.\n")
+        second_country = int(input("#: "))
+        print(f"{countries[second_country]['name']}\n")
+    except ValueError:
+        print("That was not the number.")
+
+
+ask_country()
+
 """
 Use the 'format_currency' function to format the output of the conversion
 format_currency(AMOUNT, CURRENCY_CODE, locale="ko_KR" (no need to change this one))
