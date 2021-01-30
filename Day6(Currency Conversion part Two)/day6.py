@@ -30,6 +30,8 @@ for row in rows:
             }
             countries.append(country)
 
+for index, key in enumerate(countries):
+    print(f"#{index} : {key['name']}")
 
 """
 Use the 'format_currency' function to format the output of the conversion
