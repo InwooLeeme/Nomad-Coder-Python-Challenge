@@ -9,7 +9,7 @@ Nomad Coder Python 2 weeks Challenge.
 - [x] Day 3 Code Challenge.
 - [x] Day 4 Code Challenge.
 - [x] Day 5 Code Challenge : Currency Conversion part One.
-- [ ] Day 6 Code Challenge : Currency Conversion part Two.
+- [x] Day 6 Code Challenge : Currency Conversion part Two.
 
 ### Day 2 Challenge Goals
 
