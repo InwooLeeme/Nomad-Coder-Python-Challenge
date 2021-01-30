@@ -26,7 +26,19 @@ for row in rows:
             }
             countries.append(country)
 
+print("Hello! Please choose select a country by number:\n")
 countries = enumerate(countries)
 for index, key in countries:
     country_name = key["name"]
     print(f"#{index} : {country_name}")
+
+
+def ask():
+    try:
+        user = int(input("#:"))
+        print(user)
+    except ValueError:
+        print("That was not a number.")
+
+
+ask()
