@@ -27,8 +27,7 @@ for row in rows:
             countries.append(country)
 
 print("Hello! Please choose select a country by number:\n")
-countries = enumerate(countries)
-for index, key in countries:
+for index, key in enumerate(countries):
     country_name = key["name"]
     print(f"#{index} : {country_name}")
 
@@ -36,9 +35,15 @@ for index, key in countries:
 def ask():
     try:
         user = int(input("#:"))
-        print(user)
+        if(user <= len(countries)):
+            print(f"You chose {countries[user]['name']}")
+            print(f"The currency code is {countries[user]['code']}")
+        else:
+            print("Chose the number from the list.")
+            ask()
     except ValueError:
         print("That was not a number.")
+        ask()
 
 
 ask()
