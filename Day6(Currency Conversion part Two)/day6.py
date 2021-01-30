@@ -36,16 +36,38 @@ for index, key in enumerate(countries):
 print("Welcome to CurrencyConvert PRO 2000")
 
 
+def convert_coins(first, second):
+    try:
+        convert_coin = int(input(
+            f"How many {countries[first]['name']} do you want to convert to {countries[second]['name']}?\n"))
+        convert_url = f"https://transferwise.com/gb/currency-converter/{countries[first]['code'].lower()}-to-{countries[second]['code'].lower()}-rate?amount={convert_coin}"
+        print(convert_url)
+
+    except ValueError:
+        print("That was not the number.")
+        convert_coins(first, second)
+
+
 def ask_country():
     try:
         print("Where are you from? Choose a country by number.\n")
         first_country = int(input("#: "))
-        print(f"{countries[first_country]['name']}\n")
-        print("Now choose another country.\n")
-        second_country = int(input("#: "))
-        print(f"{countries[second_country]['name']}\n")
+        if(first_country <= len(countries)):
+            print(f"{countries[first_country]['name']}\n")
+            print("Now choose another country.\n")
+            second_country = int(input("#: "))
+            print(f"{countries[second_country]['name']}\n")
+            if(second_country <= len(countries)):
+                convert_coins(first_country, second_country)
+            else:
+                print("That was not in the list.")
+                ask_country()
+        else:
+            print("That was not in the list.")
+            ask_country()
     except ValueError:
         print("That was not the number.")
+        ask_country()
 
 
 ask_country()
