@@ -25,4 +25,8 @@ for row in rows:
                 "code": code
             }
             countries.append(country)
-print(countries)
+
+countries = enumerate(countries)
+for index, key in countries:
+    country_name = key["name"]
+    print(f"#{index} : {country_name}")
