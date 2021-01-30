@@ -2,10 +2,6 @@
 
 Nomad Coder Python 2 weeks Challenge.
 
-## Day 1 Quiz.
-
-## Day 2 Code Challenge.
-
 ## Tasks
 
 - [x] Day 1 Quiz.
@@ -13,6 +9,7 @@ Nomad Coder Python 2 weeks Challenge.
 - [x] Day 3 Code Challenge.
 - [x] Day 4 Code Challenge.
 - [x] Day 5 Code Challenge : Currency Conversion part One.
+- [ ] Day 6 Code Challenge : Currency Conversion part Two.
 
 ### Day 2 Challenge Goals
 
@@ -66,3 +63,17 @@ You need to complete the following functions:
 - When a country is selected, show the name and currency code.
 - 힌트1: Use try/except when converting strings to numbers. ( int(input()) )
 - 힌트2: [https://stackoverflow.com/questions/522563/accessing-the-index-in-for-loops]
+
+### Day 6 Challenge Goals:
+
+- Using yesterday's work, extend the functionality to accomplish the following:
+
+### Day 6 Challenge Conditions
+
+- This is how the program should work: [https://i.imgur.com/J7jfXcJ.mp4]
+- After getting the countries and their codes let the user choose two countries.
+- Then let the user write an amount of currency they want to convert between country a and country b
+- Then send the two currency codes and the amounts to a URL like: https://transferwise.com/gb/currency-converter/gbp-to-usd-rate?amount=50
+- Use beautiful soup to scrape Transfer Wise to get the result of the conversion.
+
+<img src="https://i.imgur.com/MbpdgXA.png">
