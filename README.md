@@ -10,7 +10,7 @@ Nomad Coder Python 2 weeks Challenge.
 - [x] Day 4 Code Challenge.
 - [x] Day 5 Code Challenge : Currency Conversion part One.
 - [x] Day 6 Code Challenge : Currency Conversion part Two.
-- [ ] Day 8 Code Challenge : Jobs4All.
+- [x] Day 8 Code Challenge : Jobs4All.
 
 ### Day 2 Challenge Goals
 
