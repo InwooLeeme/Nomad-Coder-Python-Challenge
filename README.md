@@ -10,6 +10,7 @@ Nomad Coder Python 2 weeks Challenge.
 - [x] Day 4 Code Challenge.
 - [x] Day 5 Code Challenge : Currency Conversion part One.
 - [x] Day 6 Code Challenge : Currency Conversion part Two.
+- [ ] Day 8 Code Challenge : Jobs4All.
 
 ### Day 2 Challenge Goals
 
@@ -77,3 +78,17 @@ You need to complete the following functions:
 - Use beautiful soup to scrape Transfer Wise to get the result of the conversion.
 
 <img src="https://i.imgur.com/MbpdgXA.png">
+
+### Day 8 Challenge Goals:
+
+- Goes to http://www.alba.co.kr and scrapes the companies on the front page.
+- Then go to the page of each company and scrape each job.
+- Create a .csv file for each company and write the jobs on it.
+
+### Day 8 Challenge Condition Video
+
+<video width="600rem" src="https://i.imgur.com/nZjqUT8.mp4">
+
+### Day 8 Challenge Result Picture
+
+<img src="https://nomad-coders-assets.s3.amazonaws.com/media/public/django-summernote/2020-04-19/67fa4daa-efc2-4033-abce-198f1c04b5e9.png">
