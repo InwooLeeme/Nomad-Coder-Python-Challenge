@@ -11,6 +11,7 @@ Nomad Coder Python 2 weeks Challenge.
 - [x] Day 5 Code Challenge : Currency Conversion part One.
 - [x] Day 6 Code Challenge : Currency Conversion part Two.
 - [x] Day 8 Code Challenge : Jobs4All.
+- [ ] Day 9,10 Code Challenge : Nomad News.
 
 ### Day 2 Challenge Goals
 
@@ -92,3 +93,25 @@ You need to complete the following functions:
 ### Day 8 Challenge Result Picture
 
 <img src="https://nomad-coders-assets.s3.amazonaws.com/media/public/django-summernote/2020-04-19/67fa4daa-efc2-4033-abce-198f1c04b5e9.png">
+
+### Day 9,10 Challenge goals:
+
+- Using this boilerplate we are going to build a mini clone of the Hacker News Website using the Hacker News Search API and Flask.
+- Hacker News Website : ["https://news.ycombinator.com/"] Hacker News Search API : ["https://hn.algolia.com/api"]
+- 해커뉴스 API와 Flask를 활용하여 해커뉴스 웹사이트 클론코딩을 진행합니다.
+- 위의 힌트 (Clues)를 활용하여, 필요조건 (Requirements) 에 맞추어 과제를 완수하세요.
+- 최종 결과 모습을 참고하세요.["https://uniformlinednature.serranoarevalo.repl.co/"]
+
+#### The website should have the following routes:
+
+- /
+- /?order_by=new
+- /?order_by=popular
+- /＜ id ＞
+
+### Day 9,10 Challenge Conditions
+
+- Implement a fake DB like the one we make on the video #4.6 so 'new' and 'popular' can load faster.
+- The template should reflect the current order_by selection.
+- The main page "/" should by default order_by popular
+- There should be a link to each of the stories to go and see the comments.
