@@ -12,6 +12,15 @@ Nomad Coder Python 2 weeks Challenge.
 - [x] Day 6 Code Challenge : Currency Conversion part Two.
 - [x] Day 8 Code Challenge : Jobs4All.
 - [ ] Day 9,10 Code Challenge : Nomad News.
+- [ ] Day 11,12 Code challenge : Reddit Reader.
+
+## Notice
+
+There are some errors in my laptop computer the flask doesn't work on my vscode. So I do my day9,10,11,12 challenges in repl.it.
+Here's my repl.it links
+
+- [x] Day 9,10 Challenge : [https://repl.it/@arsmagica283/Day-Nine-and-Ten-Blueprint#main.py]
+- [ ] Day 11,12 Challenge : []
 
 ### Day 2 Challenge Goals
 
