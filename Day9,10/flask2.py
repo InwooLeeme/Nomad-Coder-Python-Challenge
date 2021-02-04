@@ -39,7 +39,7 @@ def find(request):
         db = popular_articles
         title = "Popular"
     return render_template(
-        "index.html",
+        "index.htm",
         hits=data,
         query=query
     )
@@ -51,24 +51,24 @@ def home():
 
 
 @app.route("/?order_by=new")
-def new():
+def new_board():
     return find(request)
 
 
 @app.route("/?order_by=popular")
-def popular():
+def popular_board():
     return find(request)
 
 
-@app.route("/<id>"):
+@app.route("/<id>")
 def detail(id):
     detail_url = make_detail_url(id)
     request_detail = requests.get(detail_url).json()
     db = request_detail
     return render_template(
-        "detail.html",
+        "detail.htm",
         data=request_detail
     )
 
 
-app.run(host="localhost", port="5000")
+app.run(host="0.0.0.0", port="5000")
