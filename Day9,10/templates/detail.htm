@@ -1,11 +1,35 @@
 <!DOCTYPE html>
 <html>
 
-<head>
-  <link href="https://andybrewer.github.io/mvp/mvp.css" rel="stylesheet"></link>
-</head>
+    <head>
+        <link href="https://andybrewer.github.io/mvp/mvp.css" rel="stylesheet"></link>
+        <title>
+            Nomad News |
+            {{data['title']}}
+        </title>
+    </head>
 
-<body>
-</body>
-
+    <body></body>
+    <header>
+        <h1>{{data['title']}}</h1>
+        <div>
+            {{data['points']}}
+            Points | By :
+            {{data['author']}}
+            |
+            <a href="{{data['url']}}">{{data['url']}}</a>
+        </div>
+    </header>
+    <main>
+        {% for comments in data['children'] %}
+            <div>
+                <strong>{{comments['author']}}:</strong>
+                <p></p>
+                {% autoescape false %}
+                    <p>{{comments['text']}}</p>
+                {% endautoescape %}
+                <p></p>
+            </div>
+        {% endfor %}
+    </main>
 </html>
