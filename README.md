@@ -11,7 +11,7 @@ Nomad Coder Python 2 weeks Challenge.
 - [x] Day 5 Code Challenge : Currency Conversion part One.
 - [x] Day 6 Code Challenge : Currency Conversion part Two.
 - [x] Day 8 Code Challenge : Jobs4All.
-- [ ] Day 9,10 Code Challenge : Nomad News.
+- [x] Day 9,10 Code Challenge : Nomad News.
 - [ ] Day 11,12 Code challenge : Reddit Reader.
 
 ## Notice
@@ -124,3 +124,18 @@ You need to complete the following functions:
 - The template should reflect the current order_by selection.
 - The main page "/" should by default order_by popular
 - There should be a link to each of the stories to go and see the comments.
+
+### Day 11,12 Challenge Goals
+
+Using this boilerplate make website that lets the user read his/her favorite subreddits in one place.
+This is how the website should behave: [https://imgur.com/e2oH7EY]
+
+### Day 11,12 Challenge Conditions
+
+- Let the user choose from a list of subreddits.
+- For each subreddit chosen get the top posts of the month of that subreddit.
+- Combine all the posts of all subreddits and sort them by vote number.
+- Show the posts on another page.
+- 위의 영상처럼, 좋아하는 서브레딧을 한 곳에 모으고. 스크래핑 해보세요.
+- 위의 필요조건에 맞추어 과제를 완수하세요.
+- 최종 결과 모습을 참고하세요. [https://royaloddballmicrocode.serranoarevalo.repl.co/]
