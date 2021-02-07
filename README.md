@@ -13,6 +13,7 @@ Nomad Coder Python 2 weeks Challenge.
 - [x] Day 8 Code Challenge : Jobs4All.
 - [x] Day 9,10 Code Challenge : Nomad News.
 - [ ] Day 11,12 Code challenge : Reddit Reader.
+- [x] Day 13,14 Code Challenge : LAST Challenge
 
 ## Notice
 
@@ -20,7 +21,8 @@ There are some errors in my laptop computer the flask doesn't work on my vscode.
 Here's my repl.it links
 
 - [x] Day 9,10 Challenge : [https://repl.it/@arsmagica283/Day-Nine-and-Ten-Blueprint#main.py]
-- [ ] Day 11,12 Challenge : []
+- [ ] Day 11,12 Challenge : FAIL
+- [x] Day 13,14 Challenge : [https://repl.it/@arsmagica283/Day-Thirteen-and-Fourteen#main.py]
 
 ### Day 2 Challenge Goals
 
@@ -139,3 +141,16 @@ This is how the website should behave: [https://imgur.com/e2oH7EY]
 - 위의 영상처럼, 좋아하는 서브레딧을 한 곳에 모으고. 스크래핑 해보세요.
 - 위의 필요조건에 맞추어 과제를 완수하세요.
 - 최종 결과 모습을 참고하세요. [https://royaloddballmicrocode.serranoarevalo.repl.co/]
+
+### Day 13,14 Challenge Goals
+
+- Using this boilerplate build a job scrapper that finds remote jobs in three different websites.
+- This is how the website should behave: [https://i.imgur.com/DCIdYE5.mp4]
+
+### Day 13,14 Challenge Conditions
+
+- The website should also be able to export to .csv
+- You need to implement a fake db to make repeat searches faster.
+- The website should scrape three separate websites: -- [https://weworkremotely.com/] -- [https://stackoverflow.com/jobs] -- [https://remoteok.io/]
+- 보일러플레이트를 이용해서, 3개의 웹사이트에서 원격근무 일자리를 긁어오는 웹사이트를 만드세요.
+- 조건 (Requirements) 에 맞추어 과제를 완수하세요.
